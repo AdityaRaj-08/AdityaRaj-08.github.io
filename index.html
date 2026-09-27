@@ -1,1 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Aditya Raj | Data Science & Machine Learning</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #0f172a;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #e2e8f0;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 100px 10%;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #94a3b8;
+        }
+
+        .hero p {
+            max-width: 700px;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            background: #38bdf8;
+            color: #0f172a;
+            font-weight: bold;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            color: #38bdf8;
+            border: 1px solid #38bdf8;
+        }
+
+        h2.section-title {
+            font-size: 38px;
+            margin-bottom: 35px;
+            color: #38bdf8;
+        }
+
+        .about p {
+            max-width: 900px;
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            padding: 10px 16px;
+            background: #1e293b;
+            border-radius: 20px;
+            border: 1px solid #334155;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .project-card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #cbd5e1;
+        }
+
+        .education-card,
+        .experience-card {
+            background: #1e293b;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            border-top: 1px solid #1e293b;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Aditya Raj</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home -->
+    <section class="hero" id="home">
+
+        <h1>Hi, I'm <span>Aditya Raj</span></h1>
+
+        <h2>Data Science | Machine Learning | AI</h2>
+
+        <p>
+            M.Tech student at IIT Kharagpur passionate about
+            Data Science, Machine Learning, Deep Learning,
+            Time Series Forecasting and AI.
+        </p>
+
+        <div class="buttons">
+
+            <a class="btn"
+               href="https://github.com/AdityaRaj-08"
+               target="_blank">
+                GitHub
+            </a>
+
+            <a class="btn secondary"
+               href="#projects">
+                View Projects
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            I am an M.Tech student at IIT Kharagpur with a strong
+            interest in Data Science, Machine Learning and AI.
+            I enjoy building data-driven solutions involving
+            predictive modeling, time-series forecasting,
+            machine learning and real-world applications.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">Deep Learning</div>
+            <div class="skill">Pandas</div>
+            <div class="skill">NumPy</div>
+            <div class="skill">Scikit-learn</div>
+            <div class="skill">XGBoost</div>
+            <div class="skill">LightGBM</div>
+            <div class="skill">TensorFlow</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">PostgreSQL</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">EDA</div>
+            <div class="skill">Feature Engineering</div>
+            <div class="skill">Time Series</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects">
+
+            <div class="project-card">
+
+                <h3>Credit Risk Scoring</h3>
+
+                <p>
+                    Credit risk scoring system using XGBoost,
+                    WoE/IV feature selection, temporal validation,
+                    cost-sensitive optimization and SHAP.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Retail Demand Forecasting</h3>
+
+                <p>
+                    Multi-SKU demand forecasting system using
+                    SQL, LightGBM, feature engineering and
+                    MLOps techniques.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>AquaPredict</h3>
+
+                <p>
+                    Spatiotemporal water-quality prediction and
+                    early-warning system using machine learning,
+                    weather and rainfall data.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Stock Price Prediction</h3>
+
+                <p>
+                    LSTM-based time-series forecasting model
+                    for multi-step stock price prediction.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Soil & Weather ML Analysis</h3>
+
+                <p>
+                    Agricultural data analysis using Python,
+                    EDA, visualization and machine learning
+                    to study crop and environmental patterns.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>NEXA Voice Assistant</h3>
+
+                <p>
+                    Python-based voice-activated virtual
+                    assistant using speech recognition and
+                    command processing.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+
+            <h3>M.Tech – IIT Kharagpur</h3>
+
+            <p>
+                Agricultural & Food Engineering
+            </p>
+
+            <p>
+                CGPA: 8.37 / 10
+            </p>
+
+        </div>
+
+
+        <div class="education-card">
+
+            <h3>B.Tech – Agricultural Engineering</h3>
+
+            <p>
+                VNMKV, Parbhani
+            </p>
+
+            <p>
+                CGPA: 7.93 / 10
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="section-title">Contact</h2>
+
+        <p>
+            Interested in Data Science, Machine Learning
+            and AI opportunities.
+        </p>
+
+        <br>
+
+        <a class="btn"
+           href="mailto:your-email@example.com">
+            Contact Me
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Aditya Raj | Data Science & Machine Learning
+        </p>
+
+    </footer>
+
+</body>
+</html>
