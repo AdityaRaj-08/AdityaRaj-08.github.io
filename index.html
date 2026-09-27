@@ -1,443 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Aditya Raj | Data Science & Machine Learning</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
-            line-height: 1.6;
-        }
-
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: #0f172a;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            border-bottom: 1px solid #1e293b;
-        }
-
-        nav h2 {
-            color: #38bdf8;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
-
-        nav a {
-            color: #e2e8f0;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        section {
-            padding: 100px 10%;
-        }
-
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        .hero h1 {
-            font-size: 60px;
-            margin-bottom: 15px;
-        }
-
-        .hero h1 span {
-            color: #38bdf8;
-        }
-
-        .hero h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: #94a3b8;
-        }
-
-        .hero p {
-            max-width: 700px;
-            color: #cbd5e1;
-            font-size: 18px;
-        }
-
-        .buttons {
-            margin-top: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 22px;
-            margin-right: 10px;
-            border-radius: 6px;
-            text-decoration: none;
-            background: #38bdf8;
-            color: #0f172a;
-            font-weight: bold;
-        }
-
-        .btn.secondary {
-            background: transparent;
-            color: #38bdf8;
-            border: 1px solid #38bdf8;
-        }
-
-        h2.section-title {
-            font-size: 38px;
-            margin-bottom: 35px;
-            color: #38bdf8;
-        }
-
-        .about p {
-            max-width: 900px;
-            font-size: 18px;
-            color: #cbd5e1;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .skill {
-            padding: 10px 16px;
-            background: #1e293b;
-            border-radius: 20px;
-            border: 1px solid #334155;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .project-card {
-            background: #1e293b;
-            padding: 25px;
-            border-radius: 12px;
-            border: 1px solid #334155;
-            transition: 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-8px);
-            border-color: #38bdf8;
-        }
-
-        .project-card h3 {
-            color: #38bdf8;
-            margin-bottom: 12px;
-        }
-
-        .project-card p {
-            color: #cbd5e1;
-        }
-
-        .education-card,
-        .experience-card {
-            background: #1e293b;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 12px;
-            border-left: 4px solid #38bdf8;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            border-top: 1px solid #1e293b;
-            color: #94a3b8;
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 42px;
-            }
-
-            .hero h2 {
-                font-size: 22px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aditya Raj - Data Science, Machine Learning and AI Portfolio">
+  <title>Aditya Raj | Data Science & ML</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <h2>Aditya Raj</h2>
-
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-
-    <!-- Home -->
-    <section class="hero" id="home">
-
-        <h1>Hi, I'm <span>Aditya Raj</span></h1>
-
-        <h2>Data Science | Machine Learning | AI</h2>
-
-        <p>
-            M.Tech student at IIT Kharagpur passionate about
-            Data Science, Machine Learning, Deep Learning,
-            Time Series Forecasting and AI.
-        </p>
-
-        <div class="buttons">
-
-            <a class="btn"
-               href="https://github.com/AdityaRaj-08"
-               target="_blank">
-                GitHub
-            </a>
-
-            <a class="btn secondary"
-               href="#projects">
-                View Projects
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- About -->
-    <section class="about" id="about">
-
-        <h2 class="section-title">About Me</h2>
-
-        <p>
-            I am an M.Tech student at IIT Kharagpur with a strong
-            interest in Data Science, Machine Learning and AI.
-            I enjoy building data-driven solutions involving
-            predictive modeling, time-series forecasting,
-            machine learning and real-world applications.
-        </p>
-
-    </section>
-
-
-    <!-- Skills -->
-    <section id="skills">
-
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills">
-
-            <div class="skill">Python</div>
-            <div class="skill">SQL</div>
-            <div class="skill">Machine Learning</div>
-            <div class="skill">Deep Learning</div>
-            <div class="skill">Pandas</div>
-            <div class="skill">NumPy</div>
-            <div class="skill">Scikit-learn</div>
-            <div class="skill">XGBoost</div>
-            <div class="skill">LightGBM</div>
-            <div class="skill">TensorFlow</div>
-            <div class="skill">Power BI</div>
-            <div class="skill">PostgreSQL</div>
-            <div class="skill">Git & GitHub</div>
-            <div class="skill">EDA</div>
-            <div class="skill">Feature Engineering</div>
-            <div class="skill">Time Series</div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Projects -->
-    <section id="projects">
-
-        <h2 class="section-title">Projects</h2>
-
-        <div class="projects">
-
-            <div class="project-card">
-
-                <h3>Credit Risk Scoring</h3>
-
-                <p>
-                    Credit risk scoring system using XGBoost,
-                    WoE/IV feature selection, temporal validation,
-                    cost-sensitive optimization and SHAP.
-                </p>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>Retail Demand Forecasting</h3>
-
-                <p>
-                    Multi-SKU demand forecasting system using
-                    SQL, LightGBM, feature engineering and
-                    MLOps techniques.
-                </p>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>AquaPredict</h3>
-
-                <p>
-                    Spatiotemporal water-quality prediction and
-                    early-warning system using machine learning,
-                    weather and rainfall data.
-                </p>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>Stock Price Prediction</h3>
-
-                <p>
-                    LSTM-based time-series forecasting model
-                    for multi-step stock price prediction.
-                </p>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>Soil & Weather ML Analysis</h3>
-
-                <p>
-                    Agricultural data analysis using Python,
-                    EDA, visualization and machine learning
-                    to study crop and environmental patterns.
-                </p>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>NEXA Voice Assistant</h3>
-
-                <p>
-                    Python-based voice-activated virtual
-                    assistant using speech recognition and
-                    command processing.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Education -->
-    <section id="education">
-
-        <h2 class="section-title">Education</h2>
-
-        <div class="education-card">
-
-            <h3>M.Tech – IIT Kharagpur</h3>
-
-            <p>
-                Agricultural & Food Engineering
-            </p>
-
-            <p>
-                CGPA: 8.37 / 10
-            </p>
-
-        </div>
-
-
-        <div class="education-card">
-
-            <h3>B.Tech – Agricultural Engineering</h3>
-
-            <p>
-                VNMKV, Parbhani
-            </p>
-
-            <p>
-                CGPA: 7.93 / 10
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- Contact -->
-    <section id="contact">
-
-        <h2 class="section-title">Contact</h2>
-
-        <p>
-            Interested in Data Science, Machine Learning
-            and AI opportunities.
-        </p>
-
-        <br>
-
-        <a class="btn"
-           href="mailto:your-email@example.com">
-            Contact Me
-        </a>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            © 2026 Aditya Raj | Data Science & Machine Learning
-        </p>
-
-    </footer>
-
+<header class="navbar">
+  <a class="brand" href="#home">AR<span>.</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i data-lucide="menu"></i></button>
+  <nav id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero section">
+  <div class="hero-copy">
+    <p class="eyebrow">M.Tech • IIT Kharagpur</p>
+    <h1>Hi, I'm <span>Aditya Raj</span></h1>
+    <h2>Data Science · Machine Learning · AI</h2>
+    <p class="lead">
+      I build data-driven solutions across predictive modeling, time-series forecasting,
+      machine learning and real-world AI applications.
+    </p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#projects">Explore Projects <i data-lucide="arrow-up-right"></i></a>
+      <a class="btn ghost" href="Final Non-core cv.pdf" target="_blank">View Resume <i data-lucide="file-text"></i></a>
+    </div>
+    <div class="socials">
+      <a href="https://github.com/AdityaRaj-08" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+      <a href="mailto:your-email@example.com" aria-label="Email"><i data-lucide="mail"></i></a>
+    </div>
+  </div>
+
+  <div class="hero-photo-wrap">
+    <div class="photo-glow"></div>
+    <img class="profile-photo" src="profile_photo.png" alt="Aditya Raj profile photo">
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">01 / ABOUT</p>
+    <h2>Turning data into useful solutions.</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        I am an M.Tech student at IIT Kharagpur with a background in Agricultural Engineering
+        and a strong focus on Data Science, Machine Learning and AI.
+      </p>
+      <p>
+        My work combines practical domain problems with predictive analytics, feature engineering,
+        time-series modeling, visualization and deployable ML systems.
+      </p>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>8.37</strong><span>M.Tech CGPA</span></div>
+      <div class="stat"><strong>1.34M+</strong><span>Credit records modeled</span></div>
+      <div class="stat"><strong>30K+</strong><span>SKU forecasting system</span></div>
+      <div class="stat"><strong>5</strong><span>WB districts in AquaPredict</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section alt">
+  <div class="section-heading">
+    <p class="eyebrow">02 / SKILLS</p>
+    <h2>Technical toolkit.</h2>
+  </div>
+  <div class="skill-groups">
+    <div class="skill-card"><h3>Programming & Data</h3><p>Python · SQL · C · C++ · PostgreSQL · Pandas · NumPy</p></div>
+    <div class="skill-card"><h3>Machine Learning</h3><p>Scikit-learn · XGBoost · LightGBM · Feature Engineering · EDA · Statistical Analysis</p></div>
+    <div class="skill-card"><h3>Deep Learning</h3><p>TensorFlow · Keras · LSTM · Time Series Forecasting</p></div>
+    <div class="skill-card"><h3>Tools & Platforms</h3><p>Git · GitHub · Jupyter · VS Code · Power BI · MATLAB · ArcGIS · QGIS</p></div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">03 / PROJECTS</p>
+    <h2>Selected work.</h2>
+    <p>Projects focused on machine learning, forecasting, analytics and applied AI.</p>
+  </div>
+
+  <div class="project-grid">
+    <article class="project-card featured">
+      <div class="project-top"><span>01</span><span>ML · MLOps</span></div>
+      <h3>Multi-SKU Retail Demand Forecasting</h3>
+      <p>Hierarchical demand forecasting system using SQL, LightGBM quantile regression, engineered lag/rolling/calendar features and MLOps.</p>
+      <div class="tags"><span>Python</span><span>LightGBM</span><span>SQL</span><span>Docker</span><span>MLflow</span></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span>02</span><span>Risk Analytics</span></div>
+      <h3>Credit Risk Scoring</h3>
+      <p>Credit risk system using XGBoost, WoE/IV feature selection, temporal validation, cost-sensitive thresholds and SHAP reason codes.</p>
+      <div class="tags"><span>XGBoost</span><span>WoE/IV</span><span>SHAP</span></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span>03</span><span>AI · Aquaculture</span></div>
+      <h3>AquaPredict</h3>
+      <p>Spatiotemporal water-quality prediction and early-warning system integrating water-quality, weather and rainfall data across five West Bengal districts.</p>
+      <div class="tags"><span>LightGBM</span><span>XGBoost</span><span>Streamlit</span></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span>04</span><span>Deep Learning</span></div>
+      <h3>Stock Price Prediction</h3>
+      <p>LSTM-based multi-step time-series forecasting using 4.7K+ S&P 500 observations and engineered price-volume sequences.</p>
+      <div class="tags"><span>LSTM</span><span>TensorFlow</span><span>Time Series</span></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span>05</span><span>Agri Analytics</span></div>
+      <h3>Soil & Weather ML Analysis</h3>
+      <p>Analyzed 2.2K+ agricultural records across soil and weather parameters using EDA, correlation analysis and visualization.</p>
+      <div class="tags"><span>Python</span><span>Pandas</span><span>EDA</span></div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top"><span>06</span><span>Python · Automation</span></div>
+      <h3>NEXA Voice Assistant</h3>
+      <p>Python voice-activated assistant integrating speech recognition and command processing for routine task automation.</p>
+      <div class="tags"><span>Python</span><span>Speech Recognition</span><span>Automation</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="experience" class="section alt">
+  <div class="section-heading">
+    <p class="eyebrow">04 / EXPERIENCE</p>
+    <h2>Leadership & responsibility.</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item"><span>Sep 2026 – Present</span><h3>Teaching Assistant</h3><p>Agricultural & Food Engineering, IIT Kharagpur</p></div>
+    <div class="timeline-item"><span>Jul 2025 – Present</span><h3>Placement Coordinator</h3><p>Agricultural & Food Engineering Department, IIT Kharagpur</p></div>
+    <div class="timeline-item"><span>2025 – 2026</span><h3>Hall Secretary (Technology)</h3><p>LBS Hall, IIT Kharagpur</p></div>
+  </div>
+</section>
+
+<section id="education" class="section">
+  <div class="section-heading">
+    <p class="eyebrow">05 / EDUCATION</p>
+    <h2>Academic background.</h2>
+  </div>
+  <div class="education-grid">
+    <div class="edu-card"><span>2027</span><h3>M.Tech</h3><p>IIT Kharagpur</p><strong>CGPA 8.37 / 10</strong></div>
+    <div class="edu-card"><span>2025</span><h3>B.Tech — Agricultural Engineering</h3><p>VNMKV, Parbhani</p><strong>CGPA 7.93 / 10</strong></div>
+  </div>
+  <div class="resume-row">
+    <a class="btn primary" href="Final Non-core cv.pdf" target="_blank">Data Science Resume <i data-lucide="download"></i></a>
+    <a class="btn ghost" href="Final core cv.pdf" target="_blank">Core Resume <i data-lucide="download"></i></a>
+  </div>
+</section>
+
+<section id="contact" class="contact section">
+  <p class="eyebrow">06 / CONTACT</p>
+  <h2>Let's build something useful.</h2>
+  <p>I'm open to opportunities and conversations around Data Science, Machine Learning and AI.</p>
+  <a class="btn primary" href="mailto:your-email@example.com">Get in touch <i data-lucide="mail"></i></a>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 Aditya Raj. Built with HTML, CSS & JavaScript.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
